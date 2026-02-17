@@ -1,4 +1,4 @@
-//
+//-------------------
 // function removeDuplicates(str) {
 //   // new Set(str)
 //   // Converts string into a Set.
@@ -18,7 +18,7 @@
 
 // console.log(removeDuplicates("banana")); // "ban"
 
-//
+//--------------------------
 function removeDuplicates(str) {
   // This variable will store the final string
   // without duplicate characters

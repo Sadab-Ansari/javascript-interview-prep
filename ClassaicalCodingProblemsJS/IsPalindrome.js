@@ -1,10 +1,11 @@
+        // ------------  Easiest way
 // function isPalindrome(str) {
 //   return str === str.split("").reverse("").join("");
 // }
 // console.log(isPalindrome("madam")); //true
 // console.log(isPalindrome("hello")); //false
 
-// Taking Input from the user
+           // -----------Taking Input from the user
 // const readline = require("readline");
 
 // const rl = readline.createInterface({
@@ -21,7 +22,7 @@
 //   rl.close();
 // });
 
-//both for number and the string
+            //--------both for number and the string------
 // function isPalindrome(str) {
 //   str = str.toString();
 //   return str === str.split("").reverse().join("");
@@ -30,7 +31,7 @@
 // console.log(isPalindrome("madam")); // true
 // console.log(isPalindrome(121)); // true
 
-// using if-else
+        //----- using if-else --- Normal
 let str = "madam";
 let letters = str.split("");
 let reversedLetters = letters.reverse();

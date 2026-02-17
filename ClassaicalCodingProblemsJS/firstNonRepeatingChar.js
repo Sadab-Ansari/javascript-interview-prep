@@ -50,6 +50,11 @@ function firstNonRepeating(str) {
 console.log(firstNonRepeating("swiss")); // "w"
 console.log(firstNonRepeating("aabbcc")); // null
 
+
+
+
+// ----------------------
+
 // function firstNonRepeating(str) {
 //   let freq = {};
 //   for (let char of str) {

@@ -1,4 +1,4 @@
-// Easiest way
+// ------------------Easiest way
 // function revrseString(str) {
 //   return str.split("").reverse().join("");
 // }
@@ -10,7 +10,7 @@
 //   return str.split("").reverse().join("");
 // }
 // console.log(reverseString());
-
+         //---------------------Practice
 let str = "hello";
 let splitString = str.split("");
 let reverseLetters = splitString.reverse();
