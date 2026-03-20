@@ -16,3 +16,4 @@ let splitString = str.split("");
 let reverseLetters = splitString.reverse();
 let reversedWord = reverseLetters.join("");
 console.log(reversedWord);
+......
