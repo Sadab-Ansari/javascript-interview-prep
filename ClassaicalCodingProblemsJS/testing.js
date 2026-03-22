@@ -10,10 +10,10 @@
 //   return str.split("").reverse().join("");
 // }
 // console.log(reverseString());
-         //---------------------Practice
+//---------------------Practice
 let str = "hello";
 let splitString = str.split("");
 let reverseLetters = splitString.reverse();
 let reversedWord = reverseLetters.join("");
 console.log(reversedWord);
-......
+console.log(reversedWord);
