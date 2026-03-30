@@ -1,35 +1,25 @@
-function isBalancedParentheses(str) {
-  // Stack to keep track of opening parentheses '('
-  const stack = [];
-
-  // Loop through each character in the string
-  for (let i = 0; i < str.length; i++) {
-    let char = str[i];
-
-    // If the character is an opening parenthesis, push it onto the stack
-    if (char === "(") {
-      stack.push(char); // Remember that we need a matching ')'
-    }
-    // If the character is a closing parenthesis
-    else if (char === ")") {
-      // If stack is empty, there is no matching '(' for this ')'
-      if (stack.length === 0) {
-        return false; // Unbalanced parentheses
-      }
-      // Otherwise, pop the last '(' from the stack (they match)
-      stack.pop();
-    }
-    // If the character is anything else, ignore it
+function isAnagram(str1, str2) {
+  // Step 1: If lengths are different,
+  // they cannot be anagrams
+  if (str1.length !== str2.length) {
+    return false;
   }
 
-  // After processing all characters:
-  // - If stack is empty → all '(' had matching ')' → balanced
-  // - If stack is not empty → some '(' were never closed → unbalanced
-  return stack.length === 0;
+  // Step 2: Convert first string into array of characters
+  // Sort the characters alphabetically
+  // Join back into a string
+  let sorted1 = str1.split("").sort().join("");
+
+  // Do the same for second string
+  let sorted2 = str2.split("").sort().join("");
+
+  // Step 3: Compare both sorted strings
+  // If equal → anagram
+  // If not equal → not anagram
+  return sorted1 === sorted2;
 }
 
-// Test cases
-console.log(isBalancedParentheses("(a + b)")); // true  → Balanced
-console.log(isBalancedParentheses("((x + y) * z)")); // true → Balanced
-console.log(isBalancedParentheses("(a + b))")); // false → Extra closing ')'
-console.log(isBalancedParentheses("((a + b)")); // false → Missing closing ')'
+// Example usage
+console.log(isAnagram("listen", "silent")); // true
+console.log(isAnagram("hello", "world")); // false
+console.log(isAnagram("hello", "worldqqqqqqq"));
